@@ -24,8 +24,8 @@ env:
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: false
   TZ: Asia/Shanghai
-  FILE_NAME: Files4Build
-  PRODUCT_NAME: ARMv8_FOL
+  FILE_NAME: ARMv8_s9xxx
+  PRODUCT_NAME: ARMv8_s9xxx
 jobs:
   build:
     runs-on: ubuntu-18.04
