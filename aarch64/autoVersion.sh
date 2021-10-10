@@ -5,7 +5,7 @@ OpVersion=$(echo "$(cat /workdir/openwrt/package/lean/default-settings/files/zzz
 echo $OpVersion
 echo $PWD
 
-sed -i "s/OPENWRT_VER=.*/OPENWRT_VER=\"$OpVersion\"/" /home/runner/work/N1-Actions-Dabao/N1-Actions-Dabao/scripts/whoami
+sed -i "s/OPENWRT_VER=.*/OPENWRT_VER=\"$OpVersion\"/" /home/runner/work/Actions-s9xxx-Dabao/Actions-s9xxx-Dabao/scripts/whoami
 #sed -i "s/OPENWRT_VER=.*/OPENWRT_VER=\"$OpVersion\"/" /opt/openwrt/mk_rk3328_beikeyun.sh
 #sed -i "s/OPENWRT_VER=.*/OPENWRT_VER=\"$OpVersion\"/" /opt/openwrt/mk_rk3328_beikeyun_tf.sh
 #sed -i "s/OPENWRT_VER=.*/OPENWRT_VER=\"$OpVersion\"/" /opt/openwrt/mk_rk3328_beikeyun_fol.sh
