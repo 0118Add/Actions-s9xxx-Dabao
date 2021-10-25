@@ -74,13 +74,6 @@ jobs:
     #    cd openwrt
     #    ../$DIY_P1_SH
 
-    - name: Cache
-      if: env.USE_CACHEWRTBUILD == 'true'
-      uses: klever1988/cachewrtbuild@main
-      with:
-        ccache: 'true'
-        prefix: ${{ github.workspace }}/openwrt    
-    
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
 
@@ -100,6 +93,13 @@ jobs:
 #     - name: SSH connection to Actions
 #       uses: P3TERX/debugger-action@master
 #       if: env.SSH_ACTIONS == 'true' || contains(github.event.action, 'ssh')
+
+    - name: Cache
+      if: env.USE_CACHEWRTBUILD == 'true'
+      uses: klever1988/cachewrtbuild@main
+      with:
+        ccache: 'true'
+        prefix: ${{ github.workspace }}/openwrt
 
     - name: Download package
       id: package
