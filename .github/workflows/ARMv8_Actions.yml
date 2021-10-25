@@ -76,10 +76,10 @@ jobs:
 
     - name: Cache
       if: env.USE_CACHEWRTBUILD == 'true'
-      uses: klever1988/cachewrtbuild@test
+      uses: klever1988/cachewrtbuild@main
       with:
         ccache: 'true'
-        prefix: ${{ github.workspace }}/workdir/openwrt    
+        prefix: ${{ github.workspace }}/openwrt    
     
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
