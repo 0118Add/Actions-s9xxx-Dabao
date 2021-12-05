@@ -22,7 +22,6 @@ sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.de
 rm -rf package/lean/luci-lib-docker
 git clone https://github.com/lisaac/luci-lib-docker.git package/luci-lib-docker
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
-#git clone https://github.com/0118Add/sirpdboy-package.git package/sirpdboy-package
 #svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns-le package/smartdns-le
 #git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-bypass
 
