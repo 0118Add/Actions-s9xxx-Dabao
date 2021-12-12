@@ -84,6 +84,9 @@ sed -i 's/services/system/g' package/lean/luci-app-cpufreq/luasrc/controller/cpu
 # Add autocore support for armvirt
 sed -i 's/TARGET_rockchip/TARGET_rockchip\|\|TARGET_armvirt/g' package/lean/autocore/Makefile
 
+# 替换banner
+wget -O ./package/base-files/files/etc/banner https://raw.githubusercontent.com/0118Add/Armbian/main/router/Openwrt_N1/diy/n1_lede/banner
+
 #replace coremark.sh with the new one
 #rm package/lean/coremark/coremark.sh
 #cp $GITHUB_WORKSPACE/general/coremark.sh package/lean/coremark/
